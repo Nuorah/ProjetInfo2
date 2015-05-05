@@ -107,14 +107,13 @@ public class Simulateur extends Simulator implements KeyListener{
 
 	public void runOneStep(KeyEvent e){
 		int id = e.getID();
-		//if(id == KeyEvent.KEY_PRESSED){
+		if(id == KeyEvent.KEY_PRESSED){
 		this.mousta();
 		this.nbTours++;
-		//mapFrame.repaint(100);
+		mapFrame.repaint(100);
 		
 		System.out.println("Nombre de tours : " + this.nbTours);
-		//}
-		//this.gang();
+		}
 	}
 
 	public void run(){
